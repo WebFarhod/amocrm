@@ -7,9 +7,6 @@ export class LeadsController {
 
   @Get()
   async getLeads(@Query('query') query?: string) {
-    console.log('====================================');
-    console.log('test');
-    console.log('====================================');
     return this.leadsService.getLeads(query);
   }
 }
